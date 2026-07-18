@@ -290,6 +290,12 @@ def test_common_prefix(paths, out):
             ["/path2/more/path1", "/path2/more/path2"],
         ),
         (
+            ["data/path1", "data/path2"],
+            "/path2/",
+            True,
+            ["/path2/data/path1", "/path2/data/path2"],
+        ),
+        (
             ["/more/path1", "/diff/path2"],
             "/path2/",
             False,
